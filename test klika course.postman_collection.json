@@ -1,0 +1,641 @@
+{
+	"info": {
+		"_postman_id": "a59f5ff7-4ff7-4019-b4b7-0b22433722fe",
+		"name": "test klika course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TRELLO",
+			"item": [
+				{
+					"name": "POST board",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "kreiranj borda"
+					},
+					"response": []
+				},
+				{
+					"name": "Oauth1.0",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/members/me/?key=b91548f378690e57474245ed3b5c14d4&token=1e597e1ab032eba11568c47638d9a1bc1c87fa897d8e71873ab7cddf62a50f93",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"members",
+								"me",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "b91548f378690e57474245ed3b5c14d4"
+								},
+								{
+									"key": "token",
+									"value": "1e597e1ab032eba11568c47638d9a1bc1c87fa897d8e71873ab7cddf62a50f93"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "=NEW NEW NEW BOARD=",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "b91548f378690e57474245ed3b5c14d4",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "82617b95ba2d46b9082d792c486d4fc6c73c7353c6b6ba2407499d2aad7bbd86",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "1e597e1ab032eba11568c47638d9a1bc1c87fa897d8e71873ab7cddf62a50f93",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/?key=b91548f378690e57474245ed3b5c14d4&token=1e597e1ab032eba11568c47638d9a1bc1c87fa897d8e71873ab7cddf62a50f93&name=NEW NEW NEW BOARD",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "b91548f378690e57474245ed3b5c14d4"
+								},
+								{
+									"key": "token",
+									"value": "1e597e1ab032eba11568c47638d9a1bc1c87fa897d8e71873ab7cddf62a50f93"
+								},
+								{
+									"key": "name",
+									"value": "NEW NEW NEW BOARD"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete board",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/5d14b2631aa2ac62a26684e3/?key=b91548f378690e57474245ed3b5c14d4&token=1e597e1ab032eba11568c47638d9a1bc1c87fa897d8e71873ab7cddf62a50f93&name=NEW NEW NEW BOARD 3",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"5d14b2631aa2ac62a26684e3",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "b91548f378690e57474245ed3b5c14d4"
+								},
+								{
+									"key": "token",
+									"value": "1e597e1ab032eba11568c47638d9a1bc1c87fa897d8e71873ab7cddf62a50f93"
+								},
+								{
+									"key": "name",
+									"value": "NEW NEW NEW BOARD 3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get todos test JSON",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3dbf7dba-1815-4ba5-b4e4-be241ef181d3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/todos",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				},
+				"description": "todos test"
+			},
+			"response": []
+		},
+		{
+			"name": "get xml klix",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "82fe0a48-0fd8-485b-8a86-f03b23f90519",
+						"exec": [
+							"var jsonObject = xml2Json(responseBody);",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Content-Type is present\", function () {",
+							"    pm.response.to.have.header(\"Content-Type\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.klix.ba/rss/biznis/smart-cash",
+					"protocol": "https",
+					"host": [
+						"www",
+						"klix",
+						"ba"
+					],
+					"path": [
+						"rss",
+						"biznis",
+						"smart-cash"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get jpeg. flower google",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a3710524-8d03-4310-b161-29620778d3ee",
+						"exec": [
+							"pm.test(\"Status code is 300\", function () {",
+							"    pm.response.to.have.status(300);",
+							"});",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});pm.test(\"Status code is 500\", function () {",
+							"    pm.response.to.have.status(500);",
+							"});pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+					"protocol": "https",
+					"host": [
+						"images",
+						"pexels",
+						"com"
+					],
+					"path": [
+						"photos",
+						"67636",
+						"rose-blue-flower-rose-blooms-67636.jpeg"
+					],
+					"query": [
+						{
+							"key": "auto",
+							"value": "compress"
+						},
+						{
+							"key": "cs",
+							"value": "tinysrgb"
+						},
+						{
+							"key": "dpr",
+							"value": "1"
+						},
+						{
+							"key": "w",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get ebay html",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a71934bb-0245-448a-afed-75780572d5f8",
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"var schema = {",
+							"  \"items\": {",
+							"    \"type\": \"boolean\"",
+							"  }",
+							"};",
+							"",
+							"var data1 = [true, false];",
+							"var data2 = [true, 123];",
+							"",
+							"pm.test('Schema is valid', function() {",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;",
+							"  pm.expect(tv4.validate(data2, schema)).to.be.true;",
+							"});",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.ebay.com/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ebay",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.google.com/ testovii",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "625cb8d6-2f12-41d5-8d49-bde64fad6cc3",
+						"exec": [
+							"pm.test(\"Content-Type is present\", function () {",
+							"    pm.response.to.have.header(\"X-Frame-Options\");",
+							"});",
+							"",
+							"pm.test(\"Content-Type is present\", function () {",
+							"    pm.response.to.have.header(\"Set-Cookie\");",
+							"});",
+							"pm.test(\"Content-Type is present\", function () {",
+							"    pm.response.to.have.header(\"Content-Encoding\");",
+							"});",
+							"pm.test(\"Check value of heade X-Frame-Options\", function () {",
+							"   pm.response.to.have.header(\"X-Frame-Options\");",
+							"   pm.response.to.be.header(\"X-Frame-Options\", \"SAMEORIGIN\");",
+							"});",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Gmail\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.google.com/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jason variabla test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9a91352a-308a-4747-8520-d89c60b58e86",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"args\");",
+							"pm.test(\"Json\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    console.log(jsonData.headers.Accept);",
+							"    var accept =jsonData.headers.Accept;",
+							"    pm.expect(accept).to.eql(\"*/*\");",
+							"});",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://httpbin.org/get",
+					"protocol": "http",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "jason variabla test",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://httpbin.org/get",
+							"protocol": "http",
+							"host": [
+								"httpbin",
+								"org"
+							],
+							"path": [
+								"get"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Jun 2019 10:14:46 GMT"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer-when-downgrade"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Length",
+							"value": "240"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"args\": {},\n    \"headers\": {\n        \"Accept\": \"*/*\",\n        \"Accept-Encoding\": \"gzip, deflate\",\n        \"Cache-Control\": \"no-cache\",\n        \"Host\": \"httpbin.org\",\n        \"Postman-Token\": \"a9001f85-e63e-4fd3-a224-13008fba4b62\",\n        \"User-Agent\": \"PostmanRuntime/7.15.0\"\n    },\n    \"origin\": \"77.77.213.14, 77.77.213.14\",\n    \"url\": \"https://httpbin.org/get\"\n}"
+				}
+			]
+		},
+		{
+			"name": "LOGIN TEST API  MAILMONKEY",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b38b18be8ec6e26b0d7364b7f1e3cdeb-us3",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "TEST",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us3.api.mailchimp.com/3.0/",
+					"protocol": "https",
+					"host": [
+						"us3",
+						"api",
+						"mailchimp",
+						"com"
+					],
+					"path": [
+						"3.0",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creating members ",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b38b18be8ec6e26b0d7364b7f1e3cdeb-us3",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "TEST",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"status\":\"subscribed\",\n\t\"email_address\":\"cevap.przic@gmail.com\"}"
+				},
+				"url": {
+					"raw": "https://us3.api.mailchimp.com/3.0/lists/a37cfdd6a3/members",
+					"protocol": "https",
+					"host": [
+						"us3",
+						"api",
+						"mailchimp",
+						"com"
+					],
+					"path": [
+						"3.0",
+						"lists",
+						"a37cfdd6a3",
+						"members"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
